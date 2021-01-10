@@ -1,0 +1,63 @@
+.consultation {
+  font-family: "roboto", sans-serif;
+
+  &__wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  &__forms {
+    max-width: 63rem;
+    width: 100%;
+    display: flex;
+    padding-bottom: 2rem;
+    & input,
+    & select {
+      display: block;
+      min-width: 21rem;
+      padding: 0.7em 1em;
+      border-radius: 0px;
+      border: 2px solid #eaeaea;
+      margin: 0.7rem 0rem 1rem -0.2rem;
+    }
+
+    .consultation__right {
+      margin-left: 2.5rem;
+      width: 100%;
+      & textarea {
+        display: block;
+        margin: 0.7rem 0rem 1rem -0.2rem;
+        border: 2px solid #eaeaea;
+        resize: none;
+        padding: 0.7rem 1rem;
+        border-radius: 0px;
+        max-width: 40rem;
+        width: 100%;
+        height: 14.3rem;
+      }
+      & .btn__array {
+        color: black;
+      }
+
+      & .more-btn__wrapper {
+        text-align: end;
+        margin-right: 0.2rem;
+        margin-top: 3rem;
+      }
+    }
+  }
+  & .title__container {
+    margin: -3rem auto;
+  }
+}
+
+.women {
+  position: absolute;
+  bottom: -1%;
+  right: 0%;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}

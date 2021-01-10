@@ -1,0 +1,19 @@
+$fsizeMain: 18px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-family: "Fira Sans", sans-serif;
+  font-size: $fsizeMain;
+  text-transform: uppercase;
+  color: white;
+  background-color: #171919;
+}
+
+@import "_header.scss";
+@import "_global.scss";
+@import "_surf.scss";

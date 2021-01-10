@@ -1,0 +1,47 @@
+.services__row {
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  .services__item {
+    padding: 2rem 1.7rem;
+    width: 31.7%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.116) 0px 0.5rem 1rem;
+    background-color: #f9f9f9;
+    position: relative;
+
+    & img {
+      display: inline;
+    }
+    & h4 {
+      font-family: "roboto", sans-serif;
+      font-size: 1.28rem;
+      font-weight: 500;
+      padding: 1.5rem 0rem;
+      color: #212020;
+    }
+
+    & p {
+      line-height: 1.28rem;
+      letter-spacing: 0.01em;
+      color: #5e5e5e;
+      margin-bottom: 7rem;
+    }
+  }
+
+  .services__more {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2.2rem;
+    width: 100%;
+
+    .services__link {
+      color: black;
+      font-family: "roboto", sans-serif;
+      align-self: center;
+    }
+  }
+}

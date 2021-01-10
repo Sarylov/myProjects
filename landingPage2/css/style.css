@@ -1,0 +1,140 @@
+* { margin: 0; padding: 0; box-sizing: border-box; outline: none; }
+
+html { font-family: "Fira Sans", sans-serif; font-size: 18px; text-transform: uppercase; color: white; background-color: #171919; }
+
+.header { position: relative; }
+
+.header__slider__item { height: 100vh; width: 100%; background: url(../img/header-Bg.jpg) center top; background-size: cover; position: relative; }
+
+.header__slider__item .slider-item__info { position: absolute; right: 4.444rem; bottom: 6.39rem; text-align: right; }
+
+.slick-track { display: flex; }
+
+.slick-list { overflow: hidden; }
+
+.slider-arrows { position: absolute; top: 2.222rem; right: 4.444rem; z-index: 1000; cursor: pointer; }
+
+.slider-arrows__left { right: 6.666rem; }
+
+.header-dots { width: 100%; max-width: 51rem; position: absolute; right: 4.444rem; bottom: 1.78rem; z-index: 1001; margin-right: -1.466rem; }
+
+.header-dots .dots-box__text { text-transform: capitalize; }
+
+.header-dots .slick-current .dots-box { border-top: 4px solid #4af6cd; }
+
+.dots-box { display: flex; justify-content: space-between; max-width: 11.1111rem; border-top: 4px solid white; padding: 6px 0px; }
+
+.dots-box__numbers { font-weight: 800; font-size: 1.333rem; }
+
+.dots-box__text { font-weight: 300; font-size: 0.888rem; line-height: 1rem; text-align: right; align-self: center; }
+
+.header__title { position: absolute; left: 0%; top: 0%; z-index: 1001; font-weight: 800; font-size: 11.111rem; line-height: 0.79em; max-width: 27rem; opacity: 0.07; }
+
+.header__aside { position: absolute; left: 0%; top: 0%; display: flex; justify-content: space-between; height: 100vh; max-width: 9.3333rem; flex-direction: column; z-index: 1001; border-right: 1px solid #979797; text-align: center; }
+
+.header__aside .logo { width: 100%; }
+
+.header__aside .menu-nav { display: block; }
+
+.header__aside .menu-nav__item { color: white; text-decoration: none; font-weight: 500; font-size: 0.666rem; letter-spacing: 0.1875em; }
+
+.header__aside .menu-nav__item:hover .menu-nav__text { color: #4af6cd; }
+
+.header__aside .menu-nav__text { transition: color 0.3s; margin-top: 0.333rem; margin-bottom: 1.5rem; }
+
+.header__aside .aside-info__date { margin-top: 1rem; }
+
+.header__aside .aside-info__big { font-weight: 800; font-size: 4rem; }
+
+.header__aside .aside-info__little { font-weight: 300; font-size: 0.88rem; letter-spacing: 1.4px; }
+
+.header__aside .aside-info__adress { font-weight: 300; font-size: 0.666rem; letter-spacing: 1.05px; margin: 1.5rem 0rem; }
+
+.header__aside .aside-info__adress { text-transform: none; }
+
+.header__arrow { position: absolute; display: block; bottom: 2.27rem; left: 11.111rem; z-index: 1001; animation: arrowDown 1s infinite; }
+
+@keyframes arrowDown { 0% { bottom: 1.57rem; }
+  50% { bottom: 2.27rem; }
+  100% { bottom: 1.57rem; } }
+
+.header__map { position: absolute; right: 0%; top: -5%; z-index: 1000; }
+
+.header__point1 { animation-delay: 1s; }
+
+.header__point2 { animation-delay: 2s; }
+
+.header__point3 { animation-delay: 3s; }
+
+.header__point4 { animation-delay: 4s; }
+
+.header__point5 { animation-delay: 5s; }
+
+.header__line { stroke-dasharray: 600; stroke-dashoffset: 600; animation: lineDash 2s infinite 6s; }
+
+@keyframes lineDash { 100% { stroke-dashoffset: 0; } }
+
+.slider-item__info__subtitle, .slider-item__info__subtext { font-size: 1.22rem; line-height: 2em; letter-spacing: 0.456em; text-transform: uppercase; font-weight: normal; opacity: 0.5; display: inline-block; }
+
+.slider-item__info__title, .slider-item__info__text { font-weight: 800; font-size: 4.444rem; text-transform: uppercase; }
+
+.slider-item__info__title { margin-bottom: 2rem; }
+
+.slider-item__info__text { padding: 0.8rem 0rem; font-size: 2.222rem; margin-right: 0.5rem; }
+
+.slider-item__info__text span { font-weight: 200; }
+
+.subtitle-right { position: relative; }
+
+.subtitle-right::before { content: ""; position: absolute; width: 4.444rem; height: 1px; top: 50%; right: calc(100% + 1.333rem); background: #ffffff; opacity: 0.5; }
+
+.slider__arrows { position: absolute; top: 2.222rem; right: 4.444rem; }
+
+.section__title { font-weight: 800; font-size: 4.444rem; position: relative; left: 13.61rem; display: inline-block; }
+
+.section__title::after { content: ""; position: absolute; width: 4.444rem; height: 1px; background-color: #4af6cd; right: 0%; }
+
+.section__title span { font-weight: 800; font-size: 11.1111rem; position: absolute; opacity: 0.02; left: -155%; }
+
+.section__info { position: absolute; right: 4.444rem; display: inline-block; text-align: right; }
+
+.btn { font-weight: 800; font-size: 2.222rem; text-decoration: none; color: white; display: inline-block; padding: 0.9rem 0.7rem; }
+
+.btn span { background-color: #4af6cd; padding: 0.9rem 4rem 0.7rem 0.8rem; position: relative; }
+
+.btn span::after { content: ""; background: url(../img/header-array.svg) no-repeat; width: 1.333rem; height: 1.111rem; position: absolute; right: 1rem; bottom: 50%; margin-bottom: -0.555rem; }
+
+.surf { position: relative; background: url(../img/surf-bg.png) right 12.44rem no-repeat; }
+
+.surf .section__info { margin-top: 17.277rem; }
+
+.surf .section__title { margin-top: 8.722rem; }
+
+.surf-slider { margin-top: 800px; }
+
+.surf-slider .slick-arrow { top: 55.222rem; opacity: 0.25; }
+
+.surf .surf__item { height: 41.66rem; }
+
+.surf .surf__item__over { background-color: #1c2121b6; height: 100%; position: relative; padding: 75px 0px 0px 45px; transition: all 0.6s; }
+
+.surf .surf__item__over .surf__name-beach { font-weight: 800; font-size: 2.222rem; max-width: 9.4rem; }
+
+.surf .surf__item__over .surf__name-place { letter-spacing: 8px; transform: rotate(-90deg); white-space: nowrap; width: 0; position: absolute; left: 45px; bottom: 80px; height: 0; }
+
+.surf .surf__item__over .surf__name-place span { font-weight: 200; opacity: 0.85; }
+
+.surf .surf__item__over .btn__wrap { position: absolute; bottom: 0; text-align: center; width: 100%; margin-left: -45px; display: none; }
+
+.surf .surf__item:hover .btn__wrap { display: block; }
+
+.surf .surf__item:hover .surf__item__over { background-color: #1c21214d; }
+
+.surf .slick-current .surf__item__over { background-color: #1c21214d; }
+
+.surf .slick-current .btn__wrap { display: block; }
+
+.surf-item:nth-child(1) { margin-top: 2rem; }
+
+.slide3 { margin-top: 5rem; }
+/*# sourceMappingURL=style.css.map */

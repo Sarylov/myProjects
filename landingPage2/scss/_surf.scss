@@ -1,0 +1,76 @@
+.surf {
+  position: relative;
+  background: url(../img/surf-bg.png) right 12.44rem no-repeat;
+  & .section__info {
+    margin-top: 17.277rem;
+  }
+  & .section__title {
+    margin-top: 8.722rem;
+  }
+  &-slider {
+    margin-top: 800px;
+    & .slick-arrow {
+      top: 55.222rem;
+      opacity: 0.25;
+    }
+  }
+  .surf__item {
+    height: 41.66rem;
+    &__over {
+      background-color: #1c2121b6;
+      height: 100%;
+      position: relative;
+      padding: 75px 0px 0px 45px;
+      transition: all 0.6s;
+      .surf__name-beach {
+        font-weight: 800;
+        font-size: 2.222rem;
+        max-width: 9.4rem;
+      }
+      .surf__name-place {
+        letter-spacing: 8px;
+        transform: rotate(-90deg);
+        white-space: nowrap;
+        width: 0;
+        position: absolute;
+        left: 45px;
+        bottom: 80px;
+        height: 0;
+        & span {
+          font-weight: 200;
+          opacity: 0.85;
+        }
+      }
+      & .btn__wrap {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        margin-left: -45px;
+        display: none;
+      }
+    }
+    &:hover {
+      & .btn__wrap {
+        display: block;
+      }
+      & .surf__item__over {
+        background-color: #1c21214d;
+      }
+    }
+  }
+  & .slick-current {
+    & .surf__item__over {
+      background-color: #1c21214d;
+    }
+    & .btn__wrap {
+      display: block;
+    }
+  }
+}
+.surf-item:nth-child(1) {
+  margin-top: 2rem;
+}
+.slide3 {
+  margin-top: 5rem;
+}

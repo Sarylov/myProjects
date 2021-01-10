@@ -1,0 +1,43 @@
+.more-btn {
+  padding: 0.7em 1.6em;
+  border: 2px solid #ffc222;
+  border-right: 1.5rem solid #ffc222;
+  font-family: "roboto";
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+  transition: background-color 0.3s;
+  font-weight: 500;
+
+  &:hover .btn__array {
+    font-size: 1rem;
+    margin-top: -0.5rem;
+  }
+
+  &:hover {
+    background-color: #ffc222;
+  }
+
+  .btn__array {
+    color: white;
+    position: absolute;
+    right: -1rem;
+    font-size: 0.8rem;
+    top: 50%;
+    margin-top: -0.4rem;
+  }
+}
+
+.header__btn {
+  font-weight: normal;
+  margin-top: 3.5rem;
+  color: white;
+}
+
+.about-us__btn {
+  color: white;
+  & .btn__array {
+    color: black;
+  }
+}

@@ -1,0 +1,130 @@
+@media (max-width: 1000px) {
+  html {
+    font-size: 13px;
+  }
+  .women {
+    display: none;
+  }
+  .consultation__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  .header-top .top__menu {
+    display: none;
+  }
+  .header-top__content {
+    display: none;
+  }
+  .header-top .logo {
+    padding: 2rem 0rem;
+  }
+
+  .title__container {
+    flex-wrap: wrap;
+  }
+
+  .title-btn__link {
+    margin-left: 9rem;
+    margin-top: 2rem;
+  }
+
+  .services__row {
+    flex-direction: column;
+  }
+  .services__row .services__item {
+    padding: 3rem 1.7rem;
+    width: 90%;
+    text-align: center;
+    box-shadow: none;
+    background-color: white;
+    position: relative;
+    align-self: center;
+  }
+  .consultation__forms {
+    flex-direction: column;
+  }
+
+  .consultation__forms {
+    & input,
+    & select {
+      width: 100%;
+    }
+  }
+
+  .consultation__forms .consultation__right {
+    margin-left: 0rem;
+  }
+
+  .news__content {
+    flex-wrap: wrap;
+  }
+
+  .news__slider {
+    width: 100%;
+  }
+
+  .news__item {
+    width: 40%;
+  }
+  .news__slider {
+    & .slick-arrow {
+      left: 0;
+      z-index: 10;
+    }
+
+    & .slick-next {
+      left: 4rem;
+    }
+  }
+  .news__slider {
+    margin-bottom: 8rem;
+  }
+  .gmr-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  .pluses__content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .pluses .container .pluses__content .pluses__item {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .news__content {
+    flex-direction: column;
+  }
+  .news__item {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .padding__wrapper {
+    flex-direction: column;
+  }
+  .padding__left {
+    align-self: center;
+    text-align: center;
+    order: 1;
+  }
+  .padding__right {
+    width: 100%;
+    order: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 11px;
+  }
+}

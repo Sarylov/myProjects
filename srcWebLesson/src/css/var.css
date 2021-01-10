@@ -1,0 +1,11 @@
+:root {
+  --mainColor: #202225;
+  --bgMain: #ebebeb;
+  --bgMenu: #d2d2d2;
+  --bgTopPanel: #b5b5b5;
+  --extraColor: #d67200;
+  --whContainer: 1234px;
+  --colorShadow: #606265;
+  /* --colorShadow: #23252c; */
+  transition: all 0.3s;
+}
