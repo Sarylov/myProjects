@@ -1,0 +1,44 @@
+.service {
+  padding: 5rem 0;
+  background: #660000 center center;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 225px;
+    width: 100%;
+    padding: 2rem 3rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+    text-decoration: none;
+    transition: color, background 0.3s;
+
+    &:hover {
+      color: white;
+      background: $extraColor;
+
+      & p {
+        color: white;
+      }
+    }
+
+    & h3 {
+      font-size: 2.666rem;
+      font-weight: 300;
+      margin-top: 1.2rem;
+    }
+
+    & p {
+      color: $mainColor;
+      margin-top: 1.7rem;
+      line-height: 16px;
+    }
+  }
+}
