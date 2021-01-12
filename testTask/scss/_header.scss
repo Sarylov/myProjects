@@ -89,28 +89,18 @@
   }
 }
 
-.slick-prev,
-.slick-next {
+.slick-arrow {
   z-index: 100;
   &::before {
     content: "";
   }
-  background-size: cover;
-  width: 15px;
-  height: 27px;
+  position: absolute;
+  top: 50%;
 }
 
-.slick-prev {
+.prev {
   left: 0%;
-  background-image: url(../img/LeftArrow.png);
-  &:hover {
-    background-image: url(../img/LeftArrow.png);
-  }
 }
-.slick-next {
+.next {
   right: 0%;
-  background-image: url(../img/RightArrow.png);
-  &:hover {
-    background-image: url(../img/RightArrow.png);
-  }
 }

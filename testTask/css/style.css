@@ -124,17 +124,13 @@ html { font-size: 12px; font-family: Georgia, "Times New Roman", Times, serif; }
 
 .header-slider .slick-slide { display: flex; justify-content: space-between; align-items: center; }
 
-.slick-prev, .slick-next { z-index: 100; background-size: cover; width: 15px; height: 27px; }
+.slick-arrow { z-index: 100; position: absolute; top: 50%; }
 
-.slick-prev::before, .slick-next::before { content: ""; }
+.slick-arrow::before { content: ""; }
 
-.slick-prev { left: 0%; background-image: url(../img/LeftArrow.png); }
+.prev { left: 0%; }
 
-.slick-prev:hover { background-image: url(../img/LeftArrow.png); }
-
-.slick-next { right: 0%; background-image: url(../img/RightArrow.png); }
-
-.slick-next:hover { background-image: url(../img/RightArrow.png); }
+.next { right: 0%; }
 
 .service { padding: 5rem 0; background: #660000 center center; }
 
