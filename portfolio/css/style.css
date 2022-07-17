@@ -6,7 +6,7 @@
 }
 
 .white-theme {
-  --main-color: #f3f3f3;
+  --main-color: #e2e2e2;
   --info-color: #005ae0;
   --colorText: #585858;
   --elGradient: linear-gradient(70deg, rgb(243, 243, 243), rgb(255, 255, 255));
@@ -292,6 +292,12 @@ html {
   color: var(--colorText);
   font-size: 2rem;
   margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+
+.social a:hover,
+.socialBar a:hover {
+  color: var(--info-color);
 }
 
 .socialBar a {
