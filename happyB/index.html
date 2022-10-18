@@ -8,6 +8,15 @@
     <title>happy birthday</title>
   </head>
   <body>
+    <div class="baner">
+      <div class="banerContent">
+        <p>
+          Контент представленный здесь доступен только лицам достигшим 19 лет
+        </p>
+        <button onclick="myFunction()">мне уже 19</button>
+      </div>
+    </div>
+
     <div class="dance dance1"><img src="img/dance.gif" alt="" /></div>
     <div class="dance dance2"><img src="img/dance2.gif" alt="" /></div>
     <div class="dance dance3"><img src="img/dance3.gif" alt="" /></div>
@@ -15,18 +24,6 @@
     <div class="background"></div>
     <div class="container">
       <div class="content">
-        <!-- <div class="video">
-          <iframe
-            id="ytplayer"
-            type="text/html"
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/OxP9EVlZPOs?autoplay=1&fs=0&loop=1"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div> -->
-
         <div class="putin">
           <img src="img/putin.gif" alt="" />
           <div class="musicWrapper">
@@ -105,9 +102,11 @@
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        if (!localStorage.getItem("first")) window.location.href = "page2.html";
-      });
+      //document.addEventListener("DOMContentLoaded", () => {});
+      function myFunction() {
+        document.querySelector(".baner").classList.add("disable");
+        document.getElementById("myAudioTagID").play();
+      }
     </script>
   </body>
 </html>
