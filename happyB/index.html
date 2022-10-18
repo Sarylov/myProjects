@@ -35,6 +35,7 @@
             </p>
             <div class="music">
               <audio
+                id="myAudioTagID"
                 autoplay
                 loop
                 controls
@@ -102,5 +103,11 @@
         </div>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (!localStorage.getItem("first")) window.location.href = "page2.html";
+      });
+    </script>
   </body>
 </html>
