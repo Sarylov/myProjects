@@ -1,17 +1,15 @@
 let drowContent = (data) => {
-  let id = 0;
 
-  data.forEach((el) => {
+  data.forEach((el, index) => {
     let year = document.createElement("div");
     year.className = "year";
+    year.setAttribute("id", index);
     year.innerHTML = `<h3>${el[0]}</h3>`;
     document.querySelector(".content").append(year);
 
     el[1].forEach((project, index) => {
       let projects = document.createElement("div");
       projects.className = "project";
-      projects.setAttribute("id", id);
-      id += 1;
       projects.innerHTML = projectsHTML(project);
       document.querySelector(".content").append(projects);
 
@@ -33,7 +31,6 @@ let projectsHTML = (project) => {
   tools += "</ul>";
   let gallary = "<div class = 'gallery'>";
   project.imgSrc.forEach((src) => {
-    console.log(src);
     gallary += `<div>
                   <img src = '${src}'/>
                 </div>`;
