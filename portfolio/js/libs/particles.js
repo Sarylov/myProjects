@@ -1324,7 +1324,7 @@ var pJS = function (tagid, params) {
               pJS.tmp.source_svg = data.currentTarget.response;
               pJS.fn.vendors.checkBeforeDraw();
             } else {
-              console.log("Error pJS - Image not found");
+              console.error("Error pJS - Image not found");
               pJS.tmp.img_error = true;
             }
           }
@@ -1353,7 +1353,6 @@ var pJS = function (tagid, params) {
             cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
           else pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
         } else {
-          //console.log('still loading...');
           if (!pJS.tmp.img_error)
             pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
         }
@@ -1543,7 +1542,6 @@ window.particlesJS = function (tagid, params) {
 };
 
 window.particlesJS.load = function (tagid, path_config_json, callback) {
-  /* load json config */
   var xhr = new XMLHttpRequest();
   xhr.open("GET", path_config_json);
   xhr.onreadystatechange = function (data) {
@@ -1553,8 +1551,8 @@ window.particlesJS.load = function (tagid, path_config_json, callback) {
         window.particlesJS(tagid, params);
         if (callback) callback();
       } else {
-        console.log("Error pJS - XMLHttpRequest status: " + xhr.status);
-        console.log("Error pJS - File config not found");
+        console.error("Error pJS - XMLHttpRequest status: " + xhr.status);
+        console.error("Error pJS - File config not found");
       }
     }
   };
