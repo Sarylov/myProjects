@@ -1,8 +1,9 @@
 let drowMenu = (data) => {
-  data.forEach((project, index) => {
+  data.forEach((projectsForYear, index) => {
+    const year = projectsForYear[0]
     let menuItem = document.createElement("a");
     menuItem.setAttribute("href", `#${index}`);
-    menuItem.innerHTML = project.menuName;
+    menuItem.innerHTML = year;
     document.querySelector(".menu").append(menuItem);
   });
 };
